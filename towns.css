@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 body {
     font-family: 'Rubik', sans-serif;
@@ -119,4 +122,9 @@ h1 {
 * {
     box-sizing: border-box;
     max-width: 400px; /* Predefined max length */
+<<<<<<< HEAD
 }
+=======
+ main
+}
+>>>>>>> main
