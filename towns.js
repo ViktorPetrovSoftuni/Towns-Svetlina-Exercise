@@ -18,6 +18,21 @@ function deleteTown() {
 	else
 		$('#result').text(townName + " not found.");
 }
+ boyan-features
+function showMessage(msg) {
+    let resultBox = $('#result');
+    
+    resultBox.hide();
+    
+    resultBox.text(msg);
+    
+    resultBox.fadeIn();
+    
+    setTimeout(function() {
+        resultBox.fadeOut();
+    }, 3000);
+}
+
    function addTown() {
        var townName = $('#townNameAdd').val().trim();
        if (townName) {
@@ -28,3 +43,4 @@ function deleteTown() {
 		   $('#result').('Please enter a town name.');
        }
    };
+ main
