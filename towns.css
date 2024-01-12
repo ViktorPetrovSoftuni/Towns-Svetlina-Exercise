@@ -1,4 +1,4 @@
- boyan-features
+
 @import url('https://fonts.googleapis.com/css?family=Rubik');
 body {
     font-family: 'Rubik', sans-serif;
@@ -68,7 +68,7 @@ button#btnDelete {
 	background: #DDD;
 	border-radius: 5px;
 	border: 1px solid #777;
-=======
+}
 select, input {
 	width: 100px;
 }
@@ -119,5 +119,4 @@ h1 {
 * {
     box-sizing: border-box;
     max-width: 400px; /* Predefined max length */
- main
 }

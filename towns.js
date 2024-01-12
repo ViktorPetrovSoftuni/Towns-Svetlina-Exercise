@@ -1,11 +1,6 @@
 $(document).ready(function() {
-<<<<<<< HEAD
-	$('#btnDelete').click(deleteTown)
-	$('#btnShuffle').click(shuffleTown)
-=======
 	$('#btnDeleteTown').click(deleteTown)
-	$('#btnAddTown').click(addTown)
->>>>>>> main
+	$('#btnShuffle').click(shuffleTown)
 });
 
 function deleteTown() {
@@ -23,7 +18,6 @@ function deleteTown() {
 	else
 		$('#result').text(townName + " not found.");
 }
-<<<<<<< HEAD
 
 function shuffleTown() {
     let townsSelect = $('#towns');
@@ -39,7 +33,6 @@ function shuffleTown() {
 
     $('#result').text("Towns shuffled.");
 }
-=======
  boyan-features
 function showMessage(msg) {
     let resultBox = $('#result');
@@ -66,4 +59,3 @@ function showMessage(msg) {
        }
    };
  main
->>>>>>> main
