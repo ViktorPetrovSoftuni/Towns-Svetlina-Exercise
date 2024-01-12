@@ -1,6 +1,5 @@
 $(document).ready(function() {
-	$('#btnDeleteTown').click(deleteTown)
-	$('#btnAddTown').click(addTown)
+	$('#btnDelete').click(deleteTown)
 });
 
 function deleteTown() {
@@ -18,7 +17,6 @@ function deleteTown() {
 	else
 		$('#result').text(townName + " not found.");
 }
- boyan-features
 function showMessage(msg) {
     let resultBox = $('#result');
     
@@ -32,15 +30,3 @@ function showMessage(msg) {
         resultBox.fadeOut();
     }, 3000);
 }
-
-   function addTown() {
-       var townName = $('#townNameAdd').val().trim();
-       if (townName) {
-           $('#towns').append(new Option(townName, townName));
-           $('#townName').val(''); // Clear the input field
-		   $('#result').text(townName + " added.");
-       } else {
-		   $('#result').text('Please enter a town name.');
-       }
-   };
- main
