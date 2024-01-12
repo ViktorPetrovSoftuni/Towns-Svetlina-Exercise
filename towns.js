@@ -53,7 +53,7 @@ function addTown() {
     var townName = $('#townNameAdd').val().trim();
     if (townName) {
         $('#towns').append(new Option(townName, townName));
-        $('#townName').val(''); // Clear the input field
+        $('#townNameAdd').val(' '); // Clear the input field
         $('#result').text(townName + " added.");
     } else {
         $('#result').text('Please enter a town name.');
