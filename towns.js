@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	$('#btnDelete').click(deleteTown)
+	$('#btnShuffle').click(shuffleTown)
 });
 
 function deleteTown() {
@@ -16,4 +17,19 @@ function deleteTown() {
 		$('#result').text(townName + " deleted.");
 	else
 		$('#result').text(townName + " not found.");
+}
+
+function shuffleTown() {
+    let townsSelect = $('#towns');
+    let townsOptions = townsSelect.find('option');
+
+   
+    townsOptions.sort(function() {
+        return 0.5 - Math.random();
+    });
+
+    
+    townsSelect.empty().append(townsOptions);
+
+    $('#result').text("Towns shuffled.");
 }
