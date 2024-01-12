@@ -10,6 +10,7 @@
 
 <body>
 
+<div class="wrapper">
 <h1>Towns</h1>
 <select id="towns" size="4">
     <option>Sofia</option>
@@ -17,11 +18,14 @@
     <option>Varna</option>
     <option>Bourgas</option>
 </select>
-
-<div>
-    <input type="text" id="townName" />
-    <button id="btnDelete">Delete</button>
 </div>
+
+<div class="wrapper">
+    <label for="deleteTown">Delete existing town:</label>
+    <input type="text" id="townName" />
+    <button id="btnDeleteTown" class="delete-btn">Delete</button>
+</div>
+
 <div id="result"></div>
 
 </body>
