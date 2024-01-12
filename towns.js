@@ -1,6 +1,11 @@
 $(document).ready(function() {
+<<<<<<< HEAD
 	$('#btnDelete').click(deleteTown)
 	$('#btnShuffle').click(shuffleTown)
+=======
+	$('#btnDeleteTown').click(deleteTown)
+	$('#btnAddTown').click(addTown)
+>>>>>>> main
 });
 
 function deleteTown() {
@@ -18,6 +23,7 @@ function deleteTown() {
 	else
 		$('#result').text(townName + " not found.");
 }
+<<<<<<< HEAD
 
 function shuffleTown() {
     let townsSelect = $('#towns');
@@ -33,3 +39,31 @@ function shuffleTown() {
 
     $('#result').text("Towns shuffled.");
 }
+=======
+ boyan-features
+function showMessage(msg) {
+    let resultBox = $('#result');
+    
+    resultBox.hide();
+    
+    resultBox.text(msg);
+    
+    resultBox.fadeIn();
+    
+    setTimeout(function() {
+        resultBox.fadeOut();
+    }, 3000);
+}
+
+   function addTown() {
+       var townName = $('#townNameAdd').val().trim();
+       if (townName) {
+           $('#towns').append(new Option(townName, townName));
+           $('#townName').val(''); // Clear the input field
+		   $('#result').text(townName + " added.");
+       } else {
+		   $('#result').text('Please enter a town name.');
+       }
+   };
+ main
+>>>>>>> main
