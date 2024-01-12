@@ -40,7 +40,7 @@ function showMessage(msg) {
            $('#townName').val(''); // Clear the input field
 		   $('#result').text(townName + " added.");
        } else {
-		   $('#result').('Please enter a town name.');
+		   $('#result').text('Please enter a town name.');
        }
    };
  main
